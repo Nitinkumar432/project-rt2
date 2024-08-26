@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Company Header */
+.company-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
+}
+
+/* Company Logo */
+.company-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Status */
+.status {
+    font-weight: bold;
+}
+
+.verified {
+    color: green;
+}
+
+.not-verified {
+    color: red;
+}
+
+/* Detail Sections */
+
+.company-status,
+.job-stats {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Graph Section */
+.graph-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.graph-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px); /* Two graphs side by side */
+    margin-bottom: 20px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    margin-top: 0;
+}
+/* 2n section of details */
+.company-details {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.company-details h3 {
+    margin-top: 0;
+    color: #007bff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.detail-item i {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.detail-item p {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+}
+
+.detail-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.detail-item a:hover {
+    text-decoration: underline;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #007bff;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

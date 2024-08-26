@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/login_home.css">
+    <script src="/scripts/login_home.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <img src="/images/trpzgarsetu.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="main-container">
+            <div class="advertisement-container">
+                <!-- Advertisement Section -->
+
+                <div class="advertisement-content">
+                    <!-- <img class="adimg" src="/images/trpzgarsetu.png" alt="Logo"> -->
+                    <!-- <h2>Welcome to Our Service</h2>
+                    <p>Discover amazing opportunities and manage your account efficiently with us.</p>
+                    <p>Check out our features and see how we can help you succeed.</p> -->
+                </div>
+            </div>
+            <div class="login-container">
+                <h2>Login to Your Company Account</h2>
+                <form id="login-form" action="/company_login" method="POST" class="login-form">
+                    <div class="form-group">
+                        <label for="company_id">Company ID:</label>
+                        <input type="text" id="company_id" name="company_id" placeholder="Enter Company ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="login-button">Login</button>
+                    </div>
+                    <div class="form-group">
+                        <a href="/forgot-password" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <div id="spinner" class="spinner"></div>
+                </form>
+                <div class="alternative-login">
+                    <h3>Don't have an account?</h3>
+                    <a href="/company_register" class="register-link">Register Here</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Company. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
